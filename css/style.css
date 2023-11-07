@@ -28,6 +28,10 @@ body{
 }
 
 /* COMUNI */
+hr{
+    width: 100%;
+}
+
 .font-size-18{
     font-size: 18px;
 }
@@ -104,6 +108,11 @@ body{
 /* Conenitore del logo [SIDEBAR] */
 .logo-container{
     width: 80%;
+}
+
+.sm-logo{
+    display: none;
+    width: 100%;
 }
 
 /* Gestione di tutte le liste [SIDEBAR] */
@@ -287,17 +296,76 @@ main{
     width: calc(100% / 4 - 20px);
 }
 
-/* Comandi di interazione (like, aggiunta alla playlist) [FOOTER] */
+/* FOOTER */
+/* Comandi di interazione in colonna(like, aggiunta alla playlist) [FOOTER] */
 .interaction-btn{
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+/* Riprodotti di recente [MAIN/COVER] */
 .fa-heart{
     margin-right: 0px;
     margin-bottom: 10px;
 }
 
+}
+
+@media screen and (max-width: 768px) {
+    /* MAIN */
+    /* le colonne con le copertino si allargano [MAIN] */
+    .col-cover{
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* COMUNI */
+    /* Qualsiasi elemento con questo tag viene eliminato nella versione mobile */
+    .sm-hidden{
+        display: none;
+    }
+    
+    /* Schermata principale escludendo la sidebar */
+    .main-content{
+        width: calc(100% - 65px); /* Altera anche .sidebar */
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    /* SIDEBAR */
+    /* Il logo piccolo compare nella versione piccola [SIDEBAR] */
+    .sm-logo{
+        display: block;
+    }
+
+    /* Il contenitore copre l'intera larghezza e centra il contenuto [SIDEBAR] */
+    .logo-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* La larghezza della sidebar è più piccola [SIDEBAR] */
+    .sidebar{
+        width: 65px; /* Altera anche .main-content */
+    }
+
+    /* Footer sidebar centrato [SIDEBAR] */
+    .sidebar-footer{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* L'immagine profilo viene centrata [SIDEBAR] */
+    .profile-img-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
 }
 

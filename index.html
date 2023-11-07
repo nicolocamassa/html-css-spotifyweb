@@ -18,20 +18,21 @@
 
                 <!-- Container del logo [SIDEBAR] -->
                 <div class="logo-container">
-                    <img src="./img/logo.svg" alt="logo">
+                    <img src="./img/logo.svg" alt="logo" class="sm-hidden">
+                    <img src="./img/logo-small.svg" alt="logo" class="sm-logo">
                 </div>
 
                 <!-- Sezione dedicata alla navigazione [SIDEBAR] -->
                 <div class="sidebar-nav margin-y-20">
                     <ul>
-                        <li><i class="fa-solid fa-house"></i>Home</li>
-                        <li><i class="fa-solid fa-house"></i>Cerca</li>
-                        <li><i class="fa-solid fa-house"></i>La tua libreria</li>
+                        <li><i class="fa-solid fa-house"></i><span class="sm-hidden">Home</span></li>
+                        <li><i class="fa-solid fa-house"></i><span class="sm-hidden">Cerca</span></li>
+                        <li><i class="fa-solid fa-house"></i><span class="sm-hidden">La tua libreria</span></li>
                     </ul>
                 </div>
 
                 <!-- Sezione dedicata alle playlist [SIDEBAR] -->
-                <div class="sidebar-playlist margin-y-20">
+                <div class="sidebar-playlist margin-y-20 sm-hidden">
                     <h4>PLAYLIST</h4>
                     <ul class="margin-y-20">
 
@@ -55,18 +56,20 @@
                         <li>Nome Playlist</li>
                     </ul>
 
-                    <div class="sidebar-footer">
-                        <div class="download-app">
-                            <i class="fa-solid fa-arrow-down-long"></i>
-                            Installa app
+                    
+                </div>
+
+                <div class="sidebar-footer">
+                    <div class="download-app">
+                        <i class="fa-solid fa-arrow-down-long"></i>
+                        <span class="sm-hidden">Installa app</span>
+                    </div>
+                    <hr class="margin-y-10">
+                    <div class="account-details">
+                        <div class="profile-img-container">
+                            <img src="https://placehold.co/400x400/png" alt="demo image" class="profile-img">
                         </div>
-                        <hr class="margin-y-10">
-                        <div class="account-details">
-                            <div class="profile-img-container">
-                                <img src="https://placehold.co/400x400/png" alt="demo image" class="profile-img">
-                            </div>
-                            <span>John Doe</span>
-                        </div>
+                        <span class="sm-hidden">John Doe</span>
                     </div>
                 </div>
             </div>
