@@ -101,16 +101,19 @@ body{
     position: relative;
 }
 
+/* Conenitore del logo [SIDEBAR] */
 .logo-container{
     width: 80%;
 }
 
+/* Gestione di tutte le liste [SIDEBAR] */
 .sidebar ul{
     list-style: none;
     line-height: 1.8;
     font-size: 18px;
 }
 
+/* Gestione di tutte le icone [SIDEBAR] */
 .sidebar-nav li .fa-solid{
     font-size: 25px;
     margin-right: 10px;
@@ -127,6 +130,7 @@ body{
     width: 20%;
 }
 
+/* Footer della sidebar [SIDEBAR] */
 .sidebar-footer{
     position: absolute;
     width: 100%;
@@ -135,24 +139,29 @@ body{
     padding: 10px;
 }
 
+/* Icona per il download [SIDEBAR] */
 .download-app i{
+    font-size: 10px;
     border: #fff solid 1px;
-    padding: 3px 5px;
+    padding: 3px 4px;
     border-radius: 100px;
 }
 
+/* Dettagli profilo (foto profilo e nickname) [SIDEBAR] */
 .account-details{
     display: flex;
     align-items: center;
 }
 
+/* Foto profilo adattata al contenitore [SIDEBAR] */
 .profile-img{
     width: 100%;
 }
 
+/* Contenitore della foto profilo [SIDEBAR] */
 .profile-img-container{
     margin-top: 10px;
-    width: 15%;
+    width: 15%; /* Grandezza foto profilo [SIDEBAR] */
     margin-right: 8px;
     font-size: 18px;
 }
@@ -185,7 +194,7 @@ main{
 
 /* Riprodotti di recente [MAIN/COVER] */
 .col-cover{
-    width: 250px;
+    width: calc(100% / 6 - 20px);
     margin: 20px 20px 20px 0px;
 }
 
