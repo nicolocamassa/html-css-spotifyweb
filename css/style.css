@@ -185,6 +185,8 @@ main{
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    flex-wrap: wrap;
+    line-height: 1.8;
 }
 
 .main-nav li{
@@ -238,11 +240,13 @@ main{
 
 /* Comandi di interazione (like, aggiunta alla playlist) [FOOTER] */
 .interaction-btn{
-    margin-left: 30px;
+    margin-left: 5%;
     display: flex;
     width: 100px;
     height: 40px;
-    background-color: red;
+    font-size: 20px;
+    align-items: center;
+    color: #fff;
 }
 
 /* Dettagli dell'audio (titolo audio, nome artista) [FOOTER] */
@@ -253,15 +257,47 @@ main{
 /* Contenitore dell'immagine nel player [FOOTER] */
 .player-img{
     width: 70px;
-    height: 100%;
     background-color: red;
 }
 
+/* Grandezza immagine fissa [FOOTER] */
+.player-cover-img{
+    width: 70px
+}
+
+/* Sezione comandi per l'audio in ascolto [FOOTER] */
 .player-cmd{
     height: 60%;
 }
 
+/* Sezione barra temporale per l'audio in ascolto [FOOTER] */
 .player-time{
     height: 40%;
+}
+
+.fa-heart{
+    margin-right: 10px;
+}
+
+/* Media query */
+@media screen and (max-width: 992px) {
+/* MAIN */
+/* Riprodotti di recente [MAIN/COVER] */
+.col-cover{
+    width: calc(100% / 4 - 20px);
+}
+
+/* Comandi di interazione (like, aggiunta alla playlist) [FOOTER] */
+.interaction-btn{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-heart{
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
 }
 
