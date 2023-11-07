@@ -178,9 +178,24 @@ hr{
 /* HEADER */
 header{
     height: 100px; /* Altera anche il main (padding-top) */
-    width: 100%;
+    width: calc(100% - 250px);
     position: fixed; 
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
+
+header input{
+    position: absolute;
+    padding: 15px 30px;
+    border: 1px white solid;
+    background-color: transparent;
+    color: white;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+
 
 /* MAIN */
 /* Rimozione del contrasto con l'header */
@@ -325,6 +340,11 @@ main{
     /* Qualsiasi elemento con questo tag viene eliminato nella versione mobile */
     .sm-hidden{
         display: none;
+    }
+
+    /* HEADER */
+    header{
+        width: calc(100% - 65px);
     }
     
     /* Schermata principale escludendo la sidebar */
