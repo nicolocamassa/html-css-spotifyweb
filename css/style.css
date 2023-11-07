@@ -9,6 +9,7 @@
 body{
     font-family: 'Inter', sans-serif;
     overflow: hidden;
+    color: #fff;
 }
 
 /* MOMENTANEI */
@@ -72,6 +73,17 @@ hr{
     color: #fff;
 }
 
+.no-highlight{
+    color: #6c6c6c;
+}
+
+.highlight{
+    color: white;
+}
+
+.border-circle{
+    border-radius: 1000px;
+}
 /* Ridimensionamento di tutte le immagini in base al contenitore */
 .cover-img{
     width: 100%;
@@ -95,6 +107,7 @@ hr{
     width: calc(100% - 250px); /* Altera anche .sidebar */
     height: 100%;
     overflow-y: scroll;
+    background-color: #141922;
 }
 
 /* SIDEBAR */
@@ -103,6 +116,7 @@ hr{
     width: 250px; /* Altera anche .main-content */
     padding: 15px;
     position: relative;
+    background-color: black;
 }
 
 /* Conenitore del logo [SIDEBAR] */
@@ -118,7 +132,7 @@ hr{
 /* Gestione di tutte le liste [SIDEBAR] */
 .sidebar ul{
     list-style: none;
-    line-height: 1.8;
+    line-height: 2.3;
     font-size: 18px;
 }
 
@@ -183,6 +197,7 @@ header{
     display: flex;
     justify-content: end;
     align-items: center;
+    background-color: #080b12;
 }
 
 header input{
@@ -231,14 +246,18 @@ main{
     align-items: center;
 
     color: white;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .cover-detail h5{
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .cover-detail div{
     color: rgb(92, 92, 92);
+    font-size: 16px;
 }
 
 
@@ -247,6 +266,7 @@ main{
 .player-section{
     width: 100%;
     height: 120px; /* Altera .main-section */
+    background-color: #282828;
 }
 
 /* Colonne agli estremi del footer [FOOTER] */
@@ -281,7 +301,6 @@ main{
 /* Contenitore dell'immagine nel player [FOOTER] */
 .player-img{
     width: 70px;
-    background-color: red;
 }
 
 /* Grandezza immagine fissa [FOOTER] */

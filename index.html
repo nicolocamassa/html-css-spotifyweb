@@ -14,7 +14,7 @@
         <div class="total-content"> <!-- Content con la proprietà "flex" -->
 
              <!-- SIDEBAR -->
-            <div class="sidebar box-style">
+            <div class="sidebar no-highlight">
 
                 <!-- Container del logo [SIDEBAR] -->
                 <div class="logo-container">
@@ -23,17 +23,17 @@
                 </div>
 
                 <!-- Sezione dedicata alla navigazione [SIDEBAR] -->
-                <div class="sidebar-nav margin-y-20">
+                <div class="sidebar-nav margin-y-20 ">
                     <ul>
-                        <li><i class="fa-solid fa-house"></i><span class="sm-hidden">Home</span></li>
-                        <li><i class="fa-solid fa-house"></i><span class="sm-hidden">Cerca</span></li>
-                        <li><i class="fa-solid fa-house"></i><span class="sm-hidden">La tua libreria</span></li>
+                        <li><i class="fa-solid fa-house"></i><span class="sm-hidden highlight">Home</span></li>
+                        <li><i class="fa-solid fa-magnifying-glass no-highlight"></i><span class="sm-hidden">Cerca</span></li>
+                        <li><i class="fa-solid fa-bars-staggered no-highlight"></i><span class="sm-hidden">La tua libreria</span></li>
                     </ul>
                 </div>
 
                 <!-- Sezione dedicata alle playlist [SIDEBAR] -->
                 <div class="sidebar-playlist margin-y-20 sm-hidden">
-                    <h4>PLAYLIST</h4>
+                    <h4 class="highlight">PLAYLIST</h4>
                     <ul class="margin-y-20">
 
                         <!-- Pulsante aggiunta nuova playlist [SIDEBAR] -->
@@ -74,17 +74,17 @@
                 </div>
             </div>
 
-            <div class="main-content box-style2"> <!-- Contenuto nella schermata principale -->
+            <div class="main-content"> <!-- Contenuto nella schermata principale -->
 
                 <!-- HEADER -->
-                <header class="box-style3">
+                <header>
                     <input type="button" value="EFFETTUA L'UPGRADE" class="upgrade-btn">
                 </header> 
 
                 <!-- MAIN -->
                 <main>
                     <!-- Navigazione tra le schermate del main [MAIN]-->
-                    <div class="main-nav box-style">
+                    <div class="main-nav">
                         <ul>
                             <li>IN EVIDENZA</li>
                             <li>PODCAST</li>
@@ -100,92 +100,173 @@
                         <h2>Recently played</h2>
                         <div class="row">
                             <!-- Immagine e descrizione della cover [MAIN/COVER]-->
-                            <div class="col-cover box-style">
+                            <div class="col-cover">
 
                                 <!-- Immagine quadrata [MAIN/COVER]-->
                                 <div class="image-cover-container">
-                                    <img src="https://placehold.co/400x400/png" alt="demo image" class="cover-img">
+                                    <img src="./img/metal_lifting.jpg" alt="demo image" class="cover-img">
                                 </div>
 
                                 <!-- Dettagli dell'immagine [MAIN/COVER]-->
                                 <div class="cover-detail">
-                                    <h5>Demo</h5>
-                                    <div>demo</div>
+                                    <h5>Heavy Metal</h5>
+                                    <div>Subtitle</div>
                                 </div>
                             </div>
 
                             <!-- Immagine e descrizione della cover [MAIN/COVER]-->
-                            <div class="col-cover box-style">
+                            <div class="col-cover">
 
                                 <!-- Immagine quadrata [MAIN/COVER]-->
                                 <div class="image-cover-container">
-                                    <img src="https://placehold.co/400x400/png" alt="demo image" class="cover-img">
+                                    <img src="./img/stranger.jpeg" alt="demo image" class="cover-img">
                                 </div>
 
                                 <!-- Dettagli dell'immagine [MAIN/COVER]-->
                                 <div class="cover-detail">
-                                    <h5>Demo</h5>
-                                    <div>demo</div>
+                                    <h5>Stranger Things Vol. 1 &lpar;a Netflix Original Series Soundtrack&rpar;</h5>
+                                    <div>Kyle Dixon &amp; Michael Stein</div>
                                 </div>
                             </div>
 
                             <!-- Immagine e descrizione della cover [MAIN/COVER]-->
-                            <div class="col-cover box-style">
+                            <div class="col-cover">
 
                                 <!-- Immagine quadrata [MAIN/COVER]-->
                                 <div class="image-cover-container">
-                                    <img src="https://placehold.co/400x400/png" alt="demo image" class="cover-img">
+                                    <img src="./img/aquietplace.jpeg" alt="demo image" class="cover-img">
                                 </div>
 
                                 <!-- Dettagli dell'immagine [MAIN/COVER]-->
                                 <div class="cover-detail">
-                                    <h5>Demo</h5>
-                                    <div>demo</div>
+                                    <h5>A quiet place</h5>
+                                    <div>Subtitle</div>
                                 </div>
                             </div>
 
                             <!-- Immagine e descrizione della cover [MAIN/COVER]-->
-                            <div class="col-cover box-style">
+                            <div class="col-cover">
 
                                 <!-- Immagine quadrata [MAIN/COVER]-->
                                 <div class="image-cover-container">
-                                    <img src="https://placehold.co/400x400/png" alt="demo image" class="cover-img">
+                                    <img src="./img/split.jpeg" alt="demo image" class="cover-img">
                                 </div>
 
                                 <!-- Dettagli dell'immagine [MAIN/COVER]-->
                                 <div class="cover-detail">
-                                    <h5>Demo</h5>
-                                    <div>demo</div>
+                                    <h5>Split</h5>
+                                    <div>Subtitle</div>
                                 </div>
                             </div>
 
                             <!-- Immagine e descrizione della cover [MAIN/COVER]-->
-                            <div class="col-cover box-style">
+                            <div class="col-cover">
 
                                 <!-- Immagine quadrata [MAIN/COVER]-->
                                 <div class="image-cover-container">
-                                    <img src="https://placehold.co/400x400/png" alt="demo image" class="cover-img">
+                                    <img src="./img/cure.jpeg" alt="demo image" class="cover-img">
                                 </div>
 
                                 <!-- Dettagli dell'immagine [MAIN/COVER]-->
                                 <div class="cover-detail">
-                                    <h5>Demo</h5>
-                                    <div>demo</div>
+                                    <h5>A cure for wellness</h5>
+                                    <div>Subtitle</div>
                                 </div>
                             </div>
 
                             <!-- Immagine e descrizione della cover [MAIN/COVER]-->
-                            <div class="col-cover box-style">
+                            <div class="col-cover">
 
                                 <!-- Immagine quadrata [MAIN/COVER]-->
                                 <div class="image-cover-container">
-                                    <img src="https://placehold.co/400x400/png" alt="demo image" class="cover-img">
+                                    <img src="./img/sinister.jpeg" alt="demo image" class="cover-img">
                                 </div>
 
                                 <!-- Dettagli dell'immagine [MAIN/COVER]-->
                                 <div class="cover-detail">
-                                    <h5>Demo</h5>
-                                    <div>demo</div>
+                                    <h5>Sinister</h5>
+                                    <div>Subtitle</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- Riprodotti di recente [MAIN]-->
+                    <div class="container">
+                        <h2>Creato per John Doe</h2>
+                        <p class="no-highlight margin-y-10">Più ascolti, più accurati saranno i suggerimenti.</p>
+                        <div class="row">
+                            <!-- Immagine e descrizione della cover [MAIN/COVER]-->
+                            <div class="col-cover">
+
+                                <!-- Immagine quadrata [MAIN/COVER]-->
+                                <div class="image-cover-container">
+                                    <img src="./img/radar.jpeg" alt="demo image" class="cover-img">
+                                </div>
+
+                                <!-- Dettagli dell'immagine [MAIN/COVER]-->
+                                <div class="cover-detail">
+                                    <h5>Relase Radar</h5>
+                                </div>
+                            </div>
+
+                            <!-- Immagine e descrizione della cover [MAIN/COVER]-->
+                            <div class="col-cover">
+
+                                <!-- Immagine quadrata [MAIN/COVER]-->
+                                <div class="image-cover-container">
+                                    <img src="./img/mixdaily.jpeg" alt="demo image" class="cover-img">
+                                </div>
+
+                                <!-- Dettagli dell'immagine [MAIN/COVER]-->
+                                <div class="cover-detail">
+                                    <h5>Daily Mix 1</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="container">
+                        <h2>Artisti più popolari</h2>
+                        <p class="no-highlight margin-y-10">Più ascolti, più accurati saranno i suggerimenti.</p>
+                        <div class="row">
+                            <!-- Immagine e descrizione della cover [MAIN/COVER]-->
+                            <div class="col-cover">
+
+                                <!-- Immagine quadrata [MAIN/COVER]-->
+                                <div class="image-cover-container">
+                                    <img src="./img/youg.jpeg" alt="demo image" class="cover-img border-circle">
+                                </div>
+
+                                <!-- Dettagli dell'immagine [MAIN/COVER]-->
+                                <div class="cover-detail">
+                                    <h5>Lana del Ray</h5>
+                                </div>
+                            </div>
+
+                            <!-- Immagine e descrizione della cover [MAIN/COVER]-->
+                            <div class="col-cover">
+
+                                <!-- Immagine quadrata [MAIN/COVER]-->
+                                <div class="image-cover-container">
+                                    <img src="./img/einaudi.jpeg" alt="demo image" class="cover-img border-circle">
+                                </div>
+
+                                <!-- Dettagli dell'immagine [MAIN/COVER]-->
+                                <div class="cover-detail">
+                                    <h5>Ludovico Einaudi</h5>
                                 </div>
                             </div>
                         </div>
@@ -197,9 +278,9 @@
     </div>
 
     <!-- PLAYER -->
-    <div class="player-section box-style">
+    <div class="player-section">
         <div class="container">
-            <div class="row box-style">
+            <div class="row">
 
                 <!-- Colonna sinistra: dettagli audio in riproduzione [PLAYER] -->
                 <div class="col-25">
@@ -209,7 +290,7 @@
 
                     <div class="details-audio-player">
                         <h3>Titolo canzone</h3>
-                        <div>Nome artista</div>
+                        <div class="no-highlight">Nome artista</div>
                     </div>
 
                     <div class="interaction-btn">
