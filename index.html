@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
 </head>
 <body>
@@ -11,7 +12,65 @@
     <!-- MAIN, HEADER e SIDEBAR-->
     <div class="main-section"> <!-- Sezione contenente l'intero layout escluso il footer -->
         <div class="total-content"> <!-- Content con la proprietà "flex" -->
-            <div class="sidebar box-style"></div> <!-- Barra laterale -->
+
+             <!-- SIDEBAR -->
+            <div class="sidebar box-style">
+
+                <!-- Container del logo [SIDEBAR] -->
+                <div class="logo-container">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+
+                <!-- Sezione dedicata alla navigazione [SIDEBAR] -->
+                <div class="sidebar-nav margin-y-20">
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i>Home</li>
+                        <li><i class="fa-solid fa-house"></i>Home</li>
+                        <li><i class="fa-solid fa-house"></i>Home</li>
+                    </ul>
+                </div>
+
+                <!-- Sezione dedicata alle playlist [SIDEBAR] -->
+                <div class="sidebar-playlist margin-y-20">
+                    <h4>PLAYLIST</h4>
+                    <ul class="margin-y-20">
+
+                        <!-- Pulsante aggiunta nuova playlist [SIDEBAR] -->
+                        <li class="playlist-create">
+                            <!-- Contenitore immagine "aggiungi" [SIDEBAR] -->
+                            <div class="add-img margin-right-10">
+                                <img src="https://placehold.co/400x400/png" alt="demo image" class="cover-img">
+                            </div>
+
+                            Crea Playlist
+                        </li>
+
+                        <!-- Elenco playlist create [SIDEBAR] -->
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+
+                    <div class="sidebar-footer">
+                        <div class="download-app">
+                            <i class="fa-solid fa-arrow-down-long"></i>
+                            Installa app
+                        </div>
+                        <hr class="margin-y-20">
+                        <div class="account-details">
+                            <div class="profile-img-container">
+                                <img src="https://placehold.co/400x400/png" alt="demo image" class="profile-img">
+                            </div>
+                            <span>John Doe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="main-content box-style2"> <!-- Contenuto nella schermata principale -->
 
                 <!-- HEADER -->

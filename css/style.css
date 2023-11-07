@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    overflow: hidden;
 }
 
 /* MOMENTANEI */
@@ -25,8 +26,6 @@ body{
     border: dashed 3px black;
     background-color: rgb(11, 0, 128);
 }
-
-
 
 /* COMUNI */
 .font-size-18{
@@ -51,6 +50,22 @@ body{
 
 .content-right{
     justify-content: end;
+}
+
+.margin-y-10{
+    margin-top: 10px;
+}
+
+.margin-y-20{
+    margin-top: 20px;
+}
+
+.margin-right-10{
+    margin-right: 10px;
+}
+
+.fa-solid{
+    color: #fff;
 }
 
 /* Ridimensionamento di tutte le immagini in base al contenitore */
@@ -82,6 +97,64 @@ body{
 .sidebar{
     height: 100%;
     width: 250px; /* Altera anche .main-content */
+    padding: 15px;
+    position: relative;
+}
+
+.logo-container{
+    width: 80%;
+}
+
+.sidebar ul{
+    list-style: none;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.sidebar-nav li .fa-solid{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+/* Sezione per la creazione di una nuova playlist [SIDEBAR] */
+.playlist-create{
+    display: flex;
+    align-items: center;
+}
+
+/* Grandezza immagine "aggiungi" (contenitore) [SIDEBAR] */
+.add-img{
+    width: 20%;
+}
+
+.sidebar-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.download-app i{
+    border: #fff solid 1px;
+    padding: 3px 5px;
+    border-radius: 100px;
+}
+
+.account-details{
+    display: flex;
+    align-items: center;
+}
+
+.profile-img{
+    width: 100%;
+}
+
+.profile-img-container{
+    margin-top: 10px;
+    width: 15%;
+    margin-right: 8px;
+    font-size: 18px;
 }
 
 /* HEADER */
@@ -171,6 +244,7 @@ main{
 /* Contenitore dell'immagine nel player [FOOTER] */
 .player-img{
     width: 70px;
+    height: 100%;
     background-color: red;
 }
 
