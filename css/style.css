@@ -26,8 +26,34 @@ body{
     background-color: rgb(11, 0, 128);
 }
 
-/* MAIN, HEADER e SIDEBAR */
+.image-demo{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+}
 
+/* COMUNI */
+.font-size-18{
+    font-size: 18px;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+   padding: 20px;
+}
+
+/* MAIN, HEADER e SIDEBAR */
 /* Altezza dell'intera viewport escludendo il footer */
 .main-section{ 
     width: 100%;
@@ -42,24 +68,65 @@ body{
 
 /* Schermata principale escludendo la sidebar */
 .main-content{
-    width: calc(100% - 200px);
+    width: calc(100% - 250px); /* Altera anche .sidebar */
     height: 100%;
+    overflow-y: scroll;
 }
 
 /* SIDEBAR */
 .sidebar{
     height: 100%;
-    width: 200px;
+    width: 250px; /* Altera anche .main-content */
 }
-
 
 /* HEADER */
 header{
-    height: 100px;
+    height: 100px; /* Altera anche il main (padding-top) */
     width: 100%;
+    position: fixed; 
 }
 
 /* MAIN */
+/* Rimozione del contrasto con l'header */
+main{
+    padding-top: 100px; /* Se modificato modificare header */
+}
+
+/* Menù di navigazione [MAIN] */
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.main-nav li{
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+/* Riprodotti di recente [MAIN/COVER] */
+.col-cover{
+    width: 250px;
+    margin: 20px 20px 20px 0px;
+}
+
+/* Stile del testo descrittivo delle cover [MAIN/COVER] */
+.cover-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+.cover-detail h5{
+    font-size: 19px;
+}
+
+.cover-detail div{
+    color: rgb(92, 92, 92);
+}
 
 
 /* FOOTER */
