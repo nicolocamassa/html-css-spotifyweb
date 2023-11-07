@@ -26,11 +26,7 @@ body{
     background-color: rgb(11, 0, 128);
 }
 
-.image-demo{
-    width: 100%;
-    height: 300px;
-    background-color: red;
-}
+
 
 /* COMUNI */
 .font-size-18{
@@ -53,11 +49,20 @@ body{
    padding: 20px;
 }
 
+.content-right{
+    justify-content: end;
+}
+
+/* Ridimensionamento di tutte le immagini in base al contenitore */
+.cover-img{
+    width: 100%;
+}
+
 /* MAIN, HEADER e SIDEBAR */
 /* Altezza dell'intera viewport escludendo il footer */
 .main-section{ 
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px); /* Altera .player-section */
 }
 
 /* Affianca tutti gli elementi principali [NO FOOTER] */
@@ -130,7 +135,50 @@ main{
 
 
 /* FOOTER */
+/* Altezza fissa dell'intero footer [FOOTER] */
 .player-section{
     width: 100%;
-    height: 100px;
+    height: 120px; /* Altera .main-section */
 }
+
+/* Colonne agli estremi del footer [FOOTER] */
+.col-25{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+/* Colonna centrale per i comandi di riproduzione [FOOTER] */
+.col-50{
+    width: 50%;
+    height: 75px;
+}
+
+/* Comandi di interazione (like, aggiunta alla playlist) [FOOTER] */
+.interaction-btn{
+    margin-left: 30px;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: red;
+}
+
+/* Dettagli dell'audio (titolo audio, nome artista) [FOOTER] */
+.details-audio-player{
+    margin-left: 10px;
+}
+
+/* Contenitore dell'immagine nel player [FOOTER] */
+.player-img{
+    width: 70px;
+    background-color: red;
+}
+
+.player-cmd{
+    height: 60%;
+}
+
+.player-time{
+    height: 40%;
+}
+
