@@ -93,6 +93,10 @@ hr{
     font-size: 12px;
     margin: 0 20px;
 }
+
+h2{
+    font-size: 35px;
+}
 /* Ridimensionamento di tutte le immagini in base al contenitore */
 .cover-img{
     width: 100%;
@@ -124,8 +128,11 @@ hr{
     height: 100%;
     width: 250px; /* Altera anche .main-content */
     padding: 15px;
-    position: relative;
-    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ /*    background-color: black; */
 }
 
 /* Conenitore del logo [SIDEBAR] */
@@ -164,7 +171,6 @@ hr{
 
 /* Footer della sidebar [SIDEBAR] */
 .sidebar-footer{
-    position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -206,7 +212,7 @@ header{
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: #080b12;
+    background-color: rgba(8, 11, 18, 0.728);
 }
 
 header input{
@@ -276,6 +282,8 @@ main{
     width: 100%;
     height: 120px; /* Altera .main-section */
     background-color: #282828;
+    z-index: 1;
+    position: fixed;
 }
 
 /* Colonne agli estremi del footer [FOOTER] */
@@ -344,7 +352,7 @@ main{
 
 .slider {
     -webkit-appearance: none;
-    width: 70%;
+    width: 55%;
     height: 5px;
     background: #5d5d5d;
     outline: none;
@@ -355,6 +363,12 @@ main{
   }
 
 .slider::-moz-range-progress {
+    background: #ffffff;
+    height: 100%;
+    border-radius: 100px;
+  }
+
+  .slider::-ms-fill-lower {
     background: #ffffff;
     height: 100%;
     border-radius: 100px;
