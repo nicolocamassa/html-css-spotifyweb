@@ -153,6 +153,12 @@ h2{
     font-size: 18px;
 }
 
+/* Gestione di tutte le liste [SIDEBAR] */
+.sidebar li:hover{
+    color: white;
+    cursor: pointer;
+}
+
 /* Gestione di tutte le icone [SIDEBAR] */
 .sidebar-nav li .fa-solid{
     font-size: 25px;
@@ -174,8 +180,23 @@ h2{
 }
 
 /* Grandezza immagine "aggiungi" (contenitore) [SIDEBAR] */
-.add-img{
-    width: 20%;
+.add-playlist{
+    width: 100%;
+    background-color: #8d8d8d;
+    padding: 10px 14px;
+    font-size: 25px;
+}
+
+.playlist-create:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.playlist-create:hover .add-playlist{
+    width: 100%;
+    background-color: #363636;
+    padding: 10px 14px;
+    font-size: 25px;
 }
 
 /* Footer della sidebar [SIDEBAR] */
@@ -314,9 +335,21 @@ main{
     display: flex;
     width: 100px;
     height: 40px;
-    font-size: 20px;
     align-items: center;
     color: #fff;
+}
+
+.interaction-btn i{
+    font-size: 18px;
+    margin: 7px;
+}
+
+.volume-slider{
+    width: 30%;
+}
+
+.time-slider{
+    width: 55%;
 }
 
 /* Dettagli dell'audio (titolo audio, nome artista) [FOOTER] */
@@ -343,7 +376,7 @@ main{
 }
 
 .player-cmd i{
-    margin-right: 25px;
+    margin: 0 15px;
     font-size: 24px;
 }
 
@@ -355,13 +388,8 @@ main{
     align-items: center;
 }
 
-.fa-heart{
-    margin-right: 10px;
-}
-
 /* Stile slider [FOOTER] */
 .slider {
-    width: 55%;
     height: 5px;
     background: #5d5d5d;
     outline: none;
@@ -436,6 +464,10 @@ main{
     align-items: center;
 }
 
+.content-right .interaction-btn{
+    flex-direction: row;
+}
+
 /* Riprodotti di recente [MAIN/COVER] */
 .fa-heart{
     margin-right: 0px;
@@ -449,6 +481,26 @@ main{
     /* le colonne con le copertino si allargano [MAIN] */
     .col-cover{
         width: calc(100% / 2 - 20px);
+    }
+
+    .volume-slider{
+        display: none;
+    }
+
+    .content-right .interaction-btn{
+        flex-direction: column;
+    }
+
+    .content-left{
+        margin-right: 30px;
+    }
+
+    .content-right{
+        width: 15%;
+    }
+
+    .details-audio-player{
+        display: none;
     }
 }
 

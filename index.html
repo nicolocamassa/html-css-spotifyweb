@@ -43,7 +43,7 @@
                         <div class="playlist-create">
                             <!-- Contenitore immagine "aggiungi" [SIDEBAR] -->
                             <div class="add-img margin-right-10">
-                                <img src="https://placehold.co/400x400/png" alt="demo image" class="cover-img">
+                                <div class="add-playlist"><i class="fas fa-plus"></i></div>
                             </div>
 
                             Crea Playlist
@@ -276,14 +276,14 @@
             <div class="row">
 
                 <!-- Colonna sinistra: dettagli audio in riproduzione [PLAYER] -->
-                <div class="col-25">
+                <div class="col-25 content-left">
                     <div class="player-img">
-                       <img src="https://placehold.co/400x400/png" alt="demo image" class="player-cover-img">
+                       <img src="./img/sinister.jpeg" alt="demo image" class="player-cover-img">
                     </div>
 
                     <div class="details-audio-player">
-                        <h3>Titolo canzone</h3>
-                        <div class="no-highlight">Nome artista</div>
+                        <h3>Sinister</h3>
+                        <div class="no-highlight">Brano Nome</div>
                     </div>
 
                     <div class="interaction-btn">
@@ -297,20 +297,25 @@
                     <div class="player-cmd">
                         <i class="fa-solid fa-shuffle"></i>
                         <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-solid fa-play margin-x-10"></i>
+                        <i class="fa-solid fa-play margin-x-20"></i>
                         <i class="fa-solid fa-forward-step"></i>
                         <i class="fa-solid fa-arrow-rotate-left"></i>
                     </div>
                     <div class="player-time">
                         <span class="font-sm">0:25</span>
-                        <input type="range" name="time-music" id="range-time" class="slider">
+                        <input type="range" name="time-music" id="range-time" class="slider time-slider">
                         <span class="font-sm">4:35</span>
                     </div>
                 </div>
 
                 <!-- Colonna centrale: impostazioni di ascolto [PLAYER] -->
                 <div class="col-25 content-right">
-                    Impostazioni di ascolto
+                    <div class="interaction-btn">
+                        <i class="fa-solid fa-tv"></i>
+                        <i class="fa-solid fa-list-ul"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <input type="range" name="time-music" id="range-time" class="slider margin-x-10 volume-slider">
                 </div>
             </div>
         </div>
@@ -319,8 +324,5 @@
 </html>
 
 <!-- TO-DO -->
-<!-- Scrollbar nelle playlist (NO AGGIUNGI NUOVA PLAYLIST)[Utilizzare la vh] -->
-<!-- Aggiustare la responsività del player -->
 <!-- Realizzare tutti gli effetti hover -->
 <!-- Testare il responsive anche verticalmente -->
-<!-- Cambio di colore quando trascinato -->
