@@ -100,6 +100,7 @@ h2{
 /* Ridimensionamento di tutte le immagini in base al contenitore */
 .cover-img{
     width: 100%;
+    vertical-align: middle;
 }
 
 /* MAIN, HEADER e SIDEBAR */
@@ -149,7 +150,7 @@ h2{
 .sidebar ul{
     list-style: none;
     line-height: 2.3;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 /* Gestione di tutte le icone [SIDEBAR] */
@@ -160,8 +161,15 @@ h2{
 
 /* Sezione per la creazione di una nuova playlist [SIDEBAR] */
 .playlist-create{
+    margin-top: 15px;
     display: flex;
     align-items: center;
+    font-size: 23px;
+}
+
+.playlist-names{
+    height: 40vh;
+    overflow: auto;
 }
 
 /* Grandezza immagine "aggiungi" (contenitore) [SIDEBAR] */
@@ -351,7 +359,6 @@ main{
 }
 
 .slider {
-    -webkit-appearance: none;
     width: 55%;
     height: 5px;
     background: #5d5d5d;
