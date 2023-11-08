@@ -133,7 +133,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
- /*    background-color: black; */
+    background-color: black;
 }
 
 /* Conenitore del logo [SIDEBAR] */
@@ -150,7 +150,7 @@ h2{
 .sidebar ul{
     list-style: none;
     line-height: 2.3;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 /* Gestione di tutte le icone [SIDEBAR] */
@@ -164,11 +164,12 @@ h2{
     margin-top: 15px;
     display: flex;
     align-items: center;
-    font-size: 23px;
+    font-size: 18px;
 }
 
+/* Sezione dei nomi delle playlist [SIDEBAR]*/
 .playlist-names{
-    height: 40vh;
+    height: 35vh;
     overflow: auto;
 }
 
@@ -358,12 +359,13 @@ main{
     margin-right: 10px;
 }
 
+/* Stile slider [FOOTER] */
 .slider {
     width: 55%;
     height: 5px;
     background: #5d5d5d;
     outline: none;
-    opacity: 0.7;
+    opacity: 0.6;
     -webkit-transition: .2s;
     transition: opacity .2s;
     border-radius: 100px
@@ -384,23 +386,38 @@ main{
 .slider::-webkit-slider-thumb {
     width: 13px;
     height: 13px;
-    background: #ffffff;
+    background: rgb(251, 251, 251);
     cursor: pointer;
     opacity: 0;
     transition-duration: 100ms;
   }
 
   .slider::-moz-range-thumb {
-    width: 13px;
-    height: 13px;
+    width: 11px;
+    height: 11px;
     background: #ffffff;
     cursor: pointer;
     opacity: 0;
     transition-duration: 100ms;
+    border: 1px grey solid;
   }
 
-  .slider::-moz-range-thumb:hover {
+  .slider:hover{
     opacity: 1;
+  }
+
+  .slider::-moz-range-thumb:hover{
+    opacity: 1;
+  }
+
+  .slider::-moz-range-thumb:active{
+    opacity: 1;
+  }
+
+  .slider::-moz-range-progress:active {
+    background: greenyellow;
+    height: 100%;
+    border-radius: 100px;
   }
 
 /* Media query */
