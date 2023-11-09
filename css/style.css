@@ -136,6 +136,18 @@ h2{
     background-color: black;
 }
 
+.sidebar-nav li:nth-last-of-type(3){
+    position: relative;
+}
+
+.active-line-sidebar{
+    position: absolute;
+    margin-left: -15px;
+    width: 3px;
+    height: 100%;
+    background-color: #adff2f;
+}
+
 /* Conenitore del logo [SIDEBAR] */
 .logo-container{
     width: 80%;
@@ -207,6 +219,15 @@ h2{
     padding: 10px;
 }
 
+.no-hover-text{
+    color: #b3b3b3;
+}
+
+.no-hover-text:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
 /* Icona per il download [SIDEBAR] */
 .download-app i{
     font-size: 10px;
@@ -262,6 +283,12 @@ header input{
     color: white;
     border-radius: 100px;
     margin-right: 20px;
+    transition-duration: 1s;
+}
+
+header input:hover{
+    padding: 15px 35px;
+    cursor: pointer;
 }
 
 
@@ -280,11 +307,30 @@ main{
     padding: 20px 0;
     flex-wrap: wrap;
     line-height: 1.8;
+    color: #b3b3b3;
 }
 
 .main-nav li{
     margin-right: 20px;
     font-size: 18px;
+}
+
+.main-nav li:hover{
+   cursor: pointer;
+   color: white;
+}
+
+#active-main-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.active-line{
+    width: 60px;
+    height: 2px;
+    background-color: #adff2f;
 }
 
 /* Riprodotti di recente [MAIN/COVER] */

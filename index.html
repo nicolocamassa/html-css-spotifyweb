@@ -26,7 +26,7 @@
                     <!-- Sezione dedicata alla navigazione [SIDEBAR] -->
                     <div class="sidebar-nav margin-y-20 ">
                         <ul>
-                            <li><i class="fa-solid fa-house"></i><span class="sm-hidden highlight">Home</span></li>
+                            <li><div class="active-line-sidebar"></div><i class="fa-solid fa-house"></i><span class="sm-hidden highlight">Home</span></li>
                             <li><i class="fa-solid fa-magnifying-glass no-highlight"></i><span class="sm-hidden">Cerca</span></li>
                             <li><i class="fa-solid fa-bars-staggered no-highlight"></i><span class="sm-hidden">La tua libreria</span></li>
                         </ul>
@@ -67,14 +67,14 @@
                 <div class="sidebar-footer">
                     <div class="download-app">
                         <i class="fa-solid fa-arrow-down-long"></i>
-                        <span class="sm-hidden">Installa app</span>
+                        <span class="sm-hidden no-hover-text">Installa app</span>
                     </div>
                     <hr class="margin-y-10">
                     <div class="account-details">
                         <div class="profile-img-container">
                             <img src="./img/profile.svg" alt="demo image" class="profile-img">
                         </div>
-                        <span class="sm-hidden nickname">John Doe</span>
+                        <span class="sm-hidden nickname no-hover-text">John Doe</span>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     <!-- Navigazione tra le schermate del main [MAIN]-->
                     <div class="main-nav">
                         <ul>
-                            <li>IN EVIDENZA</li>
+                            <li id="active-main-nav">IN EVIDENZA <div class="active-line"></div></li>
                             <li>PODCAST</li>
                             <li>CLASSIFICHE</li>
                             <li>GENERI E MOOD</li>
