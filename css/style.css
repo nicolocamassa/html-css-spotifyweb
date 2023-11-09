@@ -373,6 +373,17 @@ main{
 .interaction-btn i{
     font-size: 18px;
     margin: 7px;
+    color: #b3b3b3;
+}
+
+.interaction-btn i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.interaction-btn .fa-volume-high{
+    color: white;
+    cursor: pointer;
 }
 
 .time-slider{
@@ -382,6 +393,17 @@ main{
 /* Dettagli dell'audio (titolo audio, nome artista) [FOOTER] */
 .details-audio-player{
     margin-left: 10px;
+}
+
+.details-audio-player h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.details-audio-player div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
 }
 
 /* Contenitore dell'immagine nel player [FOOTER] */
@@ -404,7 +426,21 @@ main{
 
 .player-cmd i{
     margin: 0 15px;
-    font-size: 24px;
+    font-size: 20px;
+    color: #b3b3b3;
+}
+
+.player-cmd i:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.player-cmd i:nth-last-of-type(3){
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 13px;
+    border-radius: 50%;
+    color: #000000;
 }
 
 /* Sezione barra temporale per l'audio in ascolto [FOOTER] */
